@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right top,#B9F8D3,#40DFEF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    width: 90%;
+    min-height: 80vh;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    justify-content: space-between;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    backdrop-filter: blur(2rem);
+}
+.box1{
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#forcast{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: auto;
+    gap: 1;
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2));
+    border-radius: 2rem;
+    backdrop-filter: blur(2rem);
+    padding: 1rem;
+}
+.forcast_Data{
+    text-align: center;
+    padding: 3px;
+}
+.box2{
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+}
+.search{
+    width: 100%;
+    text-align: end;
+}
+.details{
+    margin: 2rem;
+}
+#humidity,#wind,#pressure{
+    font-size: 20px;
+    font-weight: 500;
+}
+.detail{
+    font-size: 25px;
+    margin: 0.6rem;
+}
+#main_img{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+#main-image-temp{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    /* justify-content: space-between; */
+}
+#current_temp,.temp_unit{
+    display: inline;
+    font-size: 20px;
+}
+#current_temp{
+    margin: 1.2rem 0;
+}
+h3,h5{
+    display: inline;
+}
+#city{
+    border:none;
+    outline-color: #6cdbeb;
+    width: 50%;
+    height: 4vh;
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.4),rgba(255,255,255,0.5));
+    border-radius: 2rem;
+    backdrop-filter: blur(2rem);
+    padding: 1rem;
+    font-size: 1rem;
+}
+#current_location{
+    font-size: 1.3rem;
+}
+.fa-location-dot{
+    font-size: 1.2rem;
+    margin: 1.2rem 1.1rem;
+    color: #F55353;
+}
+#weather_report{
+    margin: 0.8rem 0.8rem;
+}
+/* ----------Map Section */
+.mapouter{position:relative;text-align:right;}
+.gmap_canvas {overflow:hidden;background:none!important;}
+
+#gmap_canvas{
+    height: 50vh;
+    width: 100%;
+    border-radius: 2rem;
+}
+#submit{
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color:white;
+    font-weight: 600;
+    background: rgb(235, 36, 76);
+    transition:all 300ms ease-in-out;
+}
+#submit:hover{
+    background-color: white;
+    color: rgb(235, 42, 81);
+    border-radius: 1rem 0 1rem 0;
+}
+
+.icon_image{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.cels{
+    margin-left: 0.9rem;
+    margin-right: 0.7rem;
+}
+.humid,.win,.gauge{
+    margin-right: 0.7rem;
+}

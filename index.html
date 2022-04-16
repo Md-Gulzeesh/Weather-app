@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="This site is made by Md Gulzeesh.This website shows realtime weather report(approx).Techstacks used:HTML,css,Javascript,embeded google map,https://openweathermap.org/ api for weather reports.">
+    <script src="https://kit.fontawesome.com/121d51c2ce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        
+        <div id="container">
+            <div class="box1">
+                <div id="main-image-temp">
+                    <img id="main_img" alt = "image">
+                    <div id="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span id="current_location"></span><br>
+                        <img class="icon_image cels" src="assets/thermometer.png" alt="">
+                        <h1 id="current_temp">0</h1>
+                        <h1 class="temp_unit">&deg;C</h1>
+                        <h2 id="weather_report"></h2>
+                    </div>
+                </div>
+                <div id="forcast">
+                    <div class="forcast_Data">
+                        <h4 id="day_name1">Day</h4><img src=""id="day1_img">
+                        <h3 id="max1">0</h3><h4 class="temp_unit">&deg;C</h4><br>
+                        <h5 id="min1">0</h5><h4 class="temp_unit">&deg;C</h4>
+                    </div>
+                    <div class="forcast_Data">
+                        <h4 id="day_name2">Day</h4><img src=""id="day2_img">
+                        <h3 id="max2">0</h3><h4 class="temp_unit">&deg;C</h4><br>
+                        <h5 id="min2">0</h5><h4 class="temp_unit">&deg;C</h4>
+                    </div>
+                    <div class="forcast_Data">
+                        <h4 id="day_name3">Day</h4><img src="" id="day3_img">
+                        <h3 id="max3">0</h3><h4 class="temp_unit">&deg;C</h4><br>
+                        <h5 id="min3">0</h5><h4 class="temp_unit">&deg;C</h4>
+                    </div>
+                    <div class="forcast_Data">
+                        <h4 id="day_name4">Day</h4><img src="" id="day4_img">
+                        <h3 id="max4">0</h3><h4 class="temp_unit">&deg;C</h4><br>
+                        <h5 id="min4">0</h5><h4 class="temp_unit">&deg;C</h4>
+                    </div>
+                    <div class="forcast_Data">
+                        <h4 id="day_name5">Day</h4><img src="" id="day5_img">
+                        <h3 id="max5">0</h3><h4 class="temp_unit">&deg;C</h4><br>
+                        <h5 id="min5">0</h5><h4 class="temp_unit">&deg;C</h4>
+                    </div>
+                    <div class="forcast_Data">
+                        <h4 id="day_name6">Day</h4><img src="" id="day6_img">
+                        <h3 id="max6">0</h3><h4 class="temp_unit">&deg;C</h4><br>
+                        <h5 id="min6">0</h5><h4 class="temp_unit">&deg;C</h4>
+                    </div>
+                    <div class="forcast_Data">
+                        <h4 id="day_name7">Day</h4><img src="" id="day7_img">
+                        <h3 id="max7">0</h3><h4 class="temp_unit">&deg;C</h4><br>
+                        <h5 id="min7">0</h5><h4 class="temp_unit">&deg;C</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="search">
+                    <input type="text" placeholder="Enter city name" id="city">
+                    <button onclick="getData()" id="submit">Search</button>
+                </div>
+                <div class="details">
+                    <div class="detail"><img class="icon_image humid" src="assets/humidity.png" alt=""> Humidity:<span id="humidity"></span></div>
+                    <div class="detail"><img class="icon_image win" src="assets/wind.png" alt=""> Wind's Speed:<span id="wind"></span></div>
+                    <div class="detail"><img class="icon_image gauge" src="assets/gauge.png" alt=""> Pressure:<span id="pressure"></span></div>
+                </div>
+                <div class="map">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe id="gmap_canvas" src="" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>

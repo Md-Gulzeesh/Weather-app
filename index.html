@@ -11,12 +11,15 @@
 </head>
 <body>
     <div class="main">
-        
         <div id="container">
             <div class="box1">
                 <div id="main-image-temp">
                     <img id="main_img" alt = "image">
                     <div id="location">
+                        <div class="search-for-medium-screens">
+                            <input type="text" placeholder="Enter city name" id="city">
+                            <button onclick="getData()" id="submit">Search</button>
+                        </div><br>
                         <i class="fa-solid fa-location-dot"></i>
                         <span id="current_location"></span><br>
                         <img class="icon_image cels" src="assets/thermometer.png" alt="">

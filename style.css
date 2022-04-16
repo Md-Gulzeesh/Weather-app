@@ -20,44 +20,58 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
-    gap: 2rem;
+    gap: 10px;
     justify-content: space-between;
     background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
-    border-radius: 2rem;
-    backdrop-filter: blur(2rem);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
 }
 .box1{
-    border-radius: 2rem;
-    padding: 1rem 1rem;
+    border-radius: 20px;
+    padding: 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin: auto;
 }
 #forcast{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: auto;
-    gap: 1;
+    gap: 5px;
     background: white;
     background: linear-gradient(to right bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2));
-    border-radius: 2rem;
-    backdrop-filter: blur(2rem);
-    padding: 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 10px;
 }
 .forcast_Data{
     text-align: center;
-    padding: 3px;
+    padding: 6px;
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.1),rgba(255,255,255,0.2));
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    margin: 2px;
+
 }
 .box2{
-    border-radius: 2rem;
-    padding: 1rem 1rem;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: auto;
 }
 .search{
     width: 100%;
     text-align: end;
 }
 .details{
-    margin: 2rem;
+    margin: 10px;
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.4),rgba(255,255,255,0.5));
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 10px;
 }
 #humidity,#wind,#pressure{
     font-size: 20px;
@@ -65,7 +79,7 @@
 }
 .detail{
     font-size: 25px;
-    margin: 0.6rem;
+    margin: 5px;
 }
 #main_img{
     width: 100%;
@@ -78,7 +92,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
-    gap: 1rem;
+    gap: 10px;
     /* justify-content: space-between; */
 }
 #current_temp,.temp_unit{
@@ -86,7 +100,7 @@
     font-size: 20px;
 }
 #current_temp{
-    margin: 1.2rem 0;
+    margin: 10px 0;
 }
 h3,h5{
     display: inline;
@@ -98,21 +112,21 @@ h3,h5{
     height: 4vh;
     background: white;
     background: linear-gradient(to right bottom,rgba(255,255,255,0.4),rgba(255,255,255,0.5));
-    border-radius: 2rem;
-    backdrop-filter: blur(2rem);
-    padding: 1rem;
-    font-size: 1rem;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    font-size: 18px;
 }
 #current_location{
-    font-size: 1.3rem;
+    font-size: 20px;
 }
 .fa-location-dot{
-    font-size: 1.2rem;
-    margin: 1.2rem 1.1rem;
+    font-size: 22px;
+    margin: 20px;
     color: #F55353;
 }
 #weather_report{
-    margin: 0.8rem 0.8rem;
+    margin:  16px;
 }
 /* ----------Map Section */
 .mapouter{position:relative;text-align:right;}
@@ -121,13 +135,13 @@ h3,h5{
 #gmap_canvas{
     height: 50vh;
     width: 100%;
-    border-radius: 2rem;
+    border-radius: 20px;
 }
 #submit{
     border: none;
     outline: none;
-    border-radius: 2rem;
-    padding: 0.5rem;
+    border-radius: 20px;
+    padding: 10px;
     cursor: pointer;
     color:white;
     font-weight: 600;
@@ -137,17 +151,23 @@ h3,h5{
 #submit:hover{
     background-color: white;
     color: rgb(235, 42, 81);
-    border-radius: 1rem 0 1rem 0;
+    border-radius: 10px 0 10px 0;
 }
 
 .icon_image{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 5.5%;
+    height: 5.5%;
 }
 .cels{
-    margin-left: 0.9rem;
-    margin-right: 0.7rem;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 .humid,.win,.gauge{
-    margin-right: 0.7rem;
+    margin-right: 10px;
 }
+.search-for-medium-screens{
+    display: none;
+}
+/* *****Responsive***** */
+      /* Medium screens */
+     /* @media only screen  and (min-width: 1200px) and (max-width:1220px) */

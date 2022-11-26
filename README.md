@@ -1,5 +1,5 @@
 # Weather-app
-This app shows real-time weather reports.
+This app shows real-time weather reports according to the user's current location. This app includes search functionality, which allows the user to access weather information for other locations. 
 ## Live Link: (https://weather-app-with-embedded-map.netlify.app/).
 
 ## Landing Page
